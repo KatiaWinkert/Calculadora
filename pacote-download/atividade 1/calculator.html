@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Calculo" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="katia winkert" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora</h1>
+    </header>
+    <main>
+      <p id="Primeiro Paragrafo" class="paragrafo">
+        Atividade 1 da aula 29 do curso de front End Otterwise. o intuito dessa
+        atividade é seguir com o treinamento principalmente em html e
+        JavaScript.
+      </p>
+    </main>
+    <footer>
+      <form>
+        <section>
+          <article>
+            <div id="content">
+              <div id="content-app">
+                <input type="text" id="field1" readonly value="0" />
+                <br /><br />
+                <button onclick="writeNumber(this)" id="n1">1</button>
+                <button onclick="writeNumber(this)" id="n2">2</button>
+                <button onclick="writeNumber(this)" id="n3">3</button>
+                <button onclick="writeNumber(this)" id="n4">4</button>
+                <br /><br />
+                <button onclick="writeNumber(this)" id="n5">5</button>
+                <button onclick="writeNumber(this)" id="n6">6</button>
+                <button onclick="writeNumber(this)" id="n7">7</button>
+                <button onclick="writeNumber(this)" id="n8">8</button>
+                <br /><br />
+                <button onclick="writeNumber(this)" id="n9">9</button>
+                <button onclick="writeNumber(this)" id="n0">0</button>
+                <button onclick="setDecimal(this,true)" id="dec">.</button>
+                <button onclick="setOperator(this)" id="sum">+</button>
+                <br /><br />
+                <button onclick="setOperator(this)" id="sustract">-</button>
+                <button onclick="setOperator(this)" id="multi">*</button>
+                <button onclick="setOperator(this)" id="divide">/</button>
+                <button onclick="cleartxt()" id="C">B</button>
+                <br /><br />
+                <button
+                  onclick="calculate()"
+                  id="calcular"
+                  style="width: 190px"
+                >
+                  =
+                </button>
+                <button onclick="removeLastNumber()" id="removeLast">C</button>
+              </div>
+            </div>
+            <br />
+            <br /><br />
+          </article>
+        </section>
+      </form>
+    </footer>
+  </body>
+</html>
